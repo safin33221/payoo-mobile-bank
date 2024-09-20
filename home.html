@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme='light'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>home page</title>
+</head>
+
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+                <div class="artboard artboard-demo phone-2">
+                    <!-- available balance -->
+                    <div>
+                        <div class="stats shadow">
+                            <div class="stat">
+
+                                <div id="accoutn-balancd" class="stat-value">89400</div>
+                                <div class="stat-desc">Available Balance</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <!-- user action button -->
+                    <div>
+                        <button id="display-cashin" class="btn btn-lg"> add mony</button>
+                        <button id="display-cashout" class="btn btn-lg"> cash out</button>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- add mony form -->
+
+                    <div id="add-money-form" class="  card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Amount</span>
+                                </label>
+                                <input id="add-money" type="email" placeholder="Amount" class="input input-bordered"
+                                    required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Pin</span>
+                                </label>
+                                <input id="pin-number" type="password" placeholder="Your pin"
+                                    class="input input-bordered" autocomplete="off" required />
+
+                            </div>
+                            <div class="form-control mt-6">
+                                <button class="btn btn-primary" id="add-money-btn">Add money</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- add mony form -->
+
+
+
+                    <!-- cashout form -->
+
+
+                    <div id="cash-out-form" class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Amount</span>
+                                </label>
+                                <input id="input-cash-out" type="email" placeholder="Amount" class="input input-bordered"
+                                    required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Pin</span>
+                                </label>
+                                <input id="cashout-pin-number" type="password" placeholder="Your pin"
+                                    class="input input-bordered" autocomplete="off" required />
+
+                            </div>
+                            <div class="form-control mt-6">
+                                <button class="btn btn-primary" id="Cash-out-btn">Cash Out</button>
+                            </div>
+                        </form>
+                    </div>
+
+
+                    <!-- cashout form -->
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </main>
+
+
+
+    <!-- js file -->
+
+    <script src="js/home.js"></script>
+    <script src="js/cashout.js"></script>
+    <script src="js/features.js"></script>
+</body>
+
+</html>
